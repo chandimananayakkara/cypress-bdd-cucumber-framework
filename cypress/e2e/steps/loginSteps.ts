@@ -15,5 +15,5 @@ When('I click the login button', ()=>{
 })
 
 Then('I should be redirected to the inventory page', ()=>{
-    expect(cy.url()).to.include('/inventory.html')
+    cy.url().should('include','/inventory.html')
 })
